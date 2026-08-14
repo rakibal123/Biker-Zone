@@ -9,21 +9,34 @@
 </head>
 <body class="bg-white">
      <section class="bg-lime-950 container">
-      <nav class="">
-        <ul class=" invisible lg:visible flex justify-end mx-8 lg:mx-32 text-lg py-8 text-white">
-          <li class="mx-8"><a href="#">Home</a></li>
-          <li  class="mx-8"><a href="#">Shop</a></li>
-          <li  class="mx-8"><a href="#">News</a></li>
-          <li  class="mx-8"><a href="#">Contact</a></li>
-          <li  class="mx-8 ml-24"><a href="">
-            <button class="btn btn-error text-white">Login</button>
-          </a></li>
-          <span class="visible lg:invisible text-3xl cursor-pointer "><i class="inline-block fa-solid fa-bars"></i></span>
-
-        </ul>
+      <nav class="navbar lg:px-32 py-8 text-white">
+        <div class="navbar-start flex-1 lg:hidden">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost text-white">
+              <i class="fa-solid fa-bars text-3xl"></i>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-lime-900 rounded-box w-52 text-white text-lg">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex flex-1 justify-end pr-8">
+          <ul class="menu menu-horizontal px-1 text-lg space-x-6">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end w-auto lg:pr-32">
+          <button class="btn btn-error text-white px-8">Login</button>
+        </div>
       </nav>
-      <div class="mx-8 lg:mx-32 lg:flex py-8">
-        <div class="max-w-lg lg:mt-28">
+      <div class="mx-8 lg:mx-32 lg:flex items-center py-8">
+        <div class="max-w-lg lg:flex-1">
           <p class="text-xl text-start font-medium mb-5">Computer-controlled digital transistorized with electronic advance
           </p>
           <h2 class="text-5xl font-bold mb-4">Honda CBR 300R
@@ -31,9 +44,9 @@
           <p class="text-xl font-normal mb-8 text-start">Amet minim mollit non deserunt ullamco est sit aliqua
             dolor do amet sint. Velit officia consequat duis enim velit
             mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <button class="bg-orange-500 py-3 px-7 rounded-2xl text-lg font-bold text-white">Purchase</button>
+            <button class="bg-orange-500 py-3 px-7 rounded-2xl text-lg font-bold text-white hover:bg-orange-600 transition">Purchase</button>
         </div>
-        <div class="mt-8 py-4 lg:ml-28">
+        <div class="mt-8 py-4 lg:ml-28 lg:flex-1 flex justify-center">
           <img src="./images/header-bike.png" alt="">
         </div>
       </div>
